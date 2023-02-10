@@ -59,3 +59,8 @@ model.fit(X_train,Y_train)
 X_train_prediction = model.predict(X_train)
 train_data_score = accuracy_score(X_train_prediction,Y_train)
 
+print('Accuracy of Training score: ', train_data_score)
+
+X_test_prediction = model.predict(X_test)
+test_data_score = accuracy_score(X_test_prediction, Y_test)
+print('Accuracy of Test score: ', test_data_score)
